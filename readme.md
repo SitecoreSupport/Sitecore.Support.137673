@@ -1,5 +1,8 @@
 # Sitecore.Support.137673
-Prevents from the &#8220;Empty strings are not allowed&#8221; error in ASP.NET MVC Forms when some &#8220;Localized Parameters&#8221; are empty
+The `Empty strings are not allowed` error may occur while submitting `ASP.NET MVC Forms`.
+It happens when the `Localized Parameters` field on an item that represents a required field on a form doesn't contain the following value:
+<DynamicRequiredAttribute>The {0} field is required.</DynamicRequiredAttribute>
+This patch prevents from this error.
 
 ## License  
 This patch is licensed under the [Sitecore Corporation A/S License for GitHub](https://github.com/sitecoresupport/Sitecore.Support.137673/blob/master/LICENSE).  
